@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Row,Col,Button } from 'react-bootstrap'
+import { Container,Row,Col,Button, } from 'react-bootstrap'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import hero1Image from '../../../assets/img/gambar1.jpg'
 import hero2Image from '../../../assets/img/gambar2.jpg'
@@ -10,7 +10,6 @@ function Package() {
     <Container>
         <div className="Hero">
         <Row>
-            
             <Col md={8}>
             <div className='left'>
             <h1>Travel Package</h1>
@@ -19,7 +18,11 @@ function Package() {
                             We offer both open trips and private trips to [Destination], 
                             so you can choose the option that best suits your needs.
                         </p>
-            <Button variant='outline'>Expolore Now <i><BsArrowRightCircle/></i></Button>
+            <Button variant='outline'>Expolore Now 
+                <i>
+                <BsArrowRightCircle/>
+                </i>
+                </Button>
             </div>
             </Col>
             <Col md={4} className='right-hero'>

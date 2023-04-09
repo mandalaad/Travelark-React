@@ -9,13 +9,11 @@ export const Home = () => {
   return (
     <>
     <div>
-        
         <Discovery/>
         <PickDestination/>
         <TravelTrip/>
         <PackageTrip/>
         <DiscountTrip/>
-       
     </div>
     </>
   )

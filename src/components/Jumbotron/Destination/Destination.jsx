@@ -9,7 +9,7 @@ export const Destination = () => {
     <Container>
         <div className="Hero">
         <Row>
-            <Col md={8} className='px-5'>
+            <Col md={8}>
             <div className="left left-hero">
                 <h1>Wonderful Destination Trip</h1>
                 <p>With its stunning landscapes, vibrant cities, and rich history, 

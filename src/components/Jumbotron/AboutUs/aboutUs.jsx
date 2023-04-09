@@ -1,12 +1,12 @@
 import React from 'react'
-import {Container,Row,Col,Button} from 'react-bootstrap'
-import image1 from '../../../assets/img/b1.jpg'
-import '../../css/Style.css'
+import { Col, Container, Row,Button } from 'react-bootstrap'
 import {BsArrowRightCircle} from 'react-icons/bs'
-export const Discovery = () => {
+import hero1Image from '../../../assets/img/about-us-border-hero.png'
+import hero2Image from '../../../assets/img/register_login.png'
+function AboutUs() {
   return (
-    
-    <Container>
+    <>
+   <Container>
         <div className="Hero">
         <Row>
             {/* <div className='d-flex justify-content-center align-items-center'> */}
@@ -21,20 +21,20 @@ export const Discovery = () => {
             <Button variant='outline'>Expolore Now <i><BsArrowRightCircle/></i></Button>
             </div>
             </Col>
-            <Col md={4} className='right-hero'>
-           <div className="banner">
-            <img src={image1} alt="" />
-           </div>
-           <div className="banner1">
-            <img src={image1} alt="" />
-           </div>
+            <Col md={4} className='right-about'>
+            <div class="about-us-border-hero">
+              <img src={hero1Image} alt="" />
+            </div>
+            <div class="about-us-image-hero">
+              <img src={hero2Image} alt="" />
+            </div>
             </Col>
             {/* </div> */}
         </Row>
         </div>
     </Container>
-    
+    </>
   )
 }
 
-export default Discovery
+export default AboutUs

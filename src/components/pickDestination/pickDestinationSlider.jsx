@@ -5,7 +5,7 @@ import baliImage from '../../assets/img/nusa.jpg'
 import bromoImage from '../../assets/img/gunungbromo.jpg'
 import candiImage from '../../assets/img/candiborobudur.jpg'
 import komodoImage from '../../assets/img/pulaukomodo.jpg'
-import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs'
+// import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs'
 
 export const pickDestinationSlider = () => {
   return (
@@ -20,9 +20,13 @@ export const pickDestinationSlider = () => {
         <Row className='mt-3 main-scrol justify-content-between align-items-center'>
        
             <Col md={12} className='d-flex justify-content-between align-items-center'>
-            <div className='img-scrol1' >
-            <div className="icons"><i><BsChevronDoubleLeft/></i></div>
+            {/* <div className='img-scrol1' >
+            <div className="icons">
+                <i>
+                    <BsChevronDoubleLeft/>
+                </i>
             </div>
+            </div> */}
             {/* <div className="main-scrol"> */}
             <Col md={3} className='img-box'>
                 <img src={baliImage} alt="" />
@@ -50,9 +54,9 @@ export const pickDestinationSlider = () => {
                 <p>Jawa Tengah</p>
             </Col>
             {/* </div> */}
-            <div className='img-scrol2'>
+            {/* <div className='img-scrol2'>
                 <div className="icons"><i><BsChevronDoubleRight/></i></div>
-            </div>
+            </div> */}
             </Col>
             
         </Row>

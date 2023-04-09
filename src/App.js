@@ -5,11 +5,10 @@ import {Destination} from "./pages/destination/Destinantion"
 import Packages from "./pages/package/Package";
 import Header from "./components/header/Navbar";
 import Footer from "./components/footer/Footer";
-
+import Aboutus from "./pages/aboutUs/AbouttUs";
 function App() {
   return (
    <>
-   
    <Router>
    <Header/>
     <Routes>
@@ -17,10 +16,11 @@ function App() {
     <Route path="/discovery" element={<Home />}/>
     <Route path="/destination" element={<Destination />}/>
     <Route path="/package" element={<Packages />}/>
+    <Route path="/about" element={<Aboutus />}/>
     </Routes>
     <Footer/>
    </Router>
-  
+
    </> 
   );
 }
