@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Style.css'
 import {Container,Row,Col} from 'react-bootstrap'
-export const DiscountTrip = () => {
+function DiscountTrip(){
   return (
     <Container>
         <div className="get-first-trip-discovery">

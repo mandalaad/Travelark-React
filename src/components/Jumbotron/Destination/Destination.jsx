@@ -4,7 +4,7 @@ import {BsArrowRightCircle} from 'react-icons/bs'
 import hero1Image from '../../../assets/img/hero-destination-1.jpeg'
 import hero2Image from '../../../assets/img/hero-destination-2.jpg'
 import hero3Image from '../../../assets/img/hero-destination-3.jpg'
-export const Destination = () => {
+function Destination(){
   return (
     <Container>
         <div className="Hero">

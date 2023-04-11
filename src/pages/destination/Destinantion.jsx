@@ -4,7 +4,7 @@ import PickDestinationSlider from '../../components/pickDestination/pickDestinat
 import PackageTrip from '../../components/package/packageTrip'
 import MostDestination from '../../components/pickDestination/mostpickDestination'
 import DiscountTrip from '../../components/discount/discountTrip'
-export const Destination = () => {
+function Destination(){
   return (
     <>
     <div>

@@ -7,7 +7,7 @@ function AboutUs() {
   return (
     <>
    <Container>
-        <div className="Hero">
+        <div className="Hero aboutus">
         <Row>
             {/* <div className='d-flex justify-content-center align-items-center'> */}
             <Col md={8}>

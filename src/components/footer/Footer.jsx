@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import {Container} from 'react-bootstrap'
 import footerLogo from '../../assets/img/footer-travelark.png'
 import { BsFacebook, BsInstagram, BsYoutube } from 'react-icons/bs'
+
 export const Footer = () => {
   return (
     <div className='footer'>
@@ -21,9 +22,16 @@ export const Footer = () => {
                     <div className="features px-4">
                         <h6>Features</h6>
                         <ul>
-                            <Link><li>Open Trip</li></Link>
-                            <Link><li>Private Trip</li></Link>
-                            <Link><li>Destination Trip</li></Link>
+                            
+                            <li>
+                            <Link to='/OpenTrip'>Open Trip</Link>    
+                            </li>
+                            <li>
+                                <Link to='/PrivateTrip'>Private Trip</Link>
+                            </li>
+                            <li>
+                            <Link to='/PackageDestination'>Destination Trip</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="travelark px-4">

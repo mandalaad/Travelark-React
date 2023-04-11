@@ -490,6 +490,14 @@ Nav .navbar .nav-link:hover::after {
     line-height: 30px;
 }
 
+.up-side-footer ul li a {
+    color: #ffffff;
+}
+
+.up-side-footer ul li a:hover {
+    color: #fd7b38;
+}
+
 .footer-conten .down-side-footer {
     display: flex;
     justify-content: space-between;
@@ -829,7 +837,6 @@ Nav .navbar .nav-link:hover::after {
     max-width: 740px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    position: relative;
     align-items: center;
     text-align: center;
 }
@@ -849,15 +856,36 @@ Nav .navbar .nav-link:hover::after {
 .right-about .about-us-image-hero {
     max-width: 90%;
     height: 376px;
-    position: absolute;
+    position: relative;
     grid-row: 1;
     z-index: 1;
-    top: -50px;
+    top: -70px;
     border-top: 10px solid white;
     border-left: 10px solid white;
     border-bottom: 10px solid white;
     grid-column: 4 / -1;
     grid-row: 1;
+}
+
+@media screen and (max-width: 740px) {
+    .right-about {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .right-about .about-us-border-hero {
+        max-width: 90%;
+        height: 350px;
+        z-index: -1;
+        position: relative;
+        background-position: center center;
+        border: 2px solid white;
+        right: -10px;
+        grid-column: 2 / span 8;
+        grid-row: 1;
+        top: 50px;
+    }
+    .right-about .about-us-image-hero {
+        top: -10px;
+    }
 }
 
 
@@ -878,4 +906,180 @@ Nav .navbar .nav-link:hover::after {
 .conten .contact input,
 .conten .contact textarea {
     background-color: #cdcdcd;
+}
+
+
+/* private packet */
+
+.private-paket h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1a2c21;
+}
+
+.private-paket i {
+    width: 22px;
+    color: #111;
+    padding: 0 5px;
+}
+
+.private-paket span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1a2c21;
+}
+
+.private-paket .img-fluid {
+    margin-top: 20px;
+    width: 750px;
+    height: 440px;
+}
+
+.private-paket .img-fluid img {
+    width: 100%;
+    height: 443px;
+    border-radius: 10px;
+}
+
+.private-paket .img-click {
+    margin-top: 20px;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    cursor: pointer;
+}
+
+.private-paket .img-click img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.private-paket .box-price {
+    margin-top: 20px;
+    width: 350px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 41px -15px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.private-paket .box-price-opentrip {
+    margin-top: 20px;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 41px -15px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.private-paket .box-price .tittle h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.private-paket .box-price .city h4 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #1a2c21;
+    font-style: normal;
+}
+
+.private-paket .box-price .city p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1a2c21;
+}
+
+.private-paket .box-price .star i {
+    width: 20px;
+    height: 19px;
+    color: #f4eb00;
+    margin-right: 5px;
+}
+
+.private-paket .box-price .price-city h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3f3f3f;
+}
+
+.private-paket .box-price Button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #34a753;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    border: none;
+    outline: none;
+}
+
+.private-paket .box-price p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1a2c21;
+}
+
+.conten-detail Button {
+    width: 180px;
+    background-color: #34a753;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+}
+
+.conten-detail Button:hover {
+    background-color: #fd7b38;
+}
+
+.conten-detail #example-collapse-text {
+    margin-top: 20px;
+    text-align: start;
+}
+
+.conten-detail #example-collapse-text2 {
+    margin-top: 20px;
+    text-align: start;
+}
+
+.acomodation i {
+    font-weight: 600;
+    margin: 0 5px 5px 0;
+    font-size: 20px;
+}
+
+.destination-icon i {
+    font-weight: 600;
+    margin: 0 5px 5px 0;
+    font-size: 20px;
+}
+
+.acomodation span,
+.destination-icon span,
+.feauter-trip span {
+    font-size: 16px;
+    color: #34a753;
 }

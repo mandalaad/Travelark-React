@@ -3,7 +3,7 @@ import {Container,Row,Col,Button} from 'react-bootstrap'
 import image1 from '../../../assets/img/b1.jpg'
 import '../../css/Style.css'
 import {BsArrowRightCircle} from 'react-icons/bs'
-export const Discovery = () => {
+function Discovery(){
   return (
     
     <Container>

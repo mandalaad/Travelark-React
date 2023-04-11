@@ -6,7 +6,7 @@ import bromoImage from '../../assets/img/gunungbromo.jpg'
 import candiImage from '../../assets/img/candiborobudur.jpg'
 import komodoImage from '../../assets/img/pulaukomodo.jpg'
 
-export const pickDestination = () => {
+function pickDestination(){
   return (
     <Container className='mt-5'>
         <div className="conten">

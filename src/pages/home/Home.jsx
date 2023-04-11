@@ -5,7 +5,7 @@ import TravelTrip from '../../components/travel/travelDestination'
 import PackageTrip from '../../components/package/packageTrip'
 import DiscountTrip from '../../components/discount/discountTrip'
 
-export const Home = () => {
+function Home(){
   return (
     <>
     <div>
