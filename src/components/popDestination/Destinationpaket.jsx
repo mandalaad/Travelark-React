@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Col, Collapse, Container,Row} from 'react-bootstrap'
+import { Button, Col, Container,Row, Tab, Tabs} from 'react-bootstrap'
 import {ImMap2} from 'react-icons/im'
 import {GoLocation} from 'react-icons/go'
 import {AiFillStar,AiOutlineCar} from 'react-icons/ai'
@@ -9,8 +9,7 @@ import bromoImage from '../../assets/img/gunungbromo.jpg'
 import komodoImage from '../../assets/img/pulaukomodo.jpg'
 import lombokImage from '../../assets/img/pulaulombok.jpg'
 function Destinationpaket() {
-    const [open,setOpen] = useState (true);
-    const [open1,setOpen1] = useState(true);
+    const [key, setKey] = useState('text1');
     const imgs=[
         {id:0,value:candiImage},
         {id:1,value:bromoImage},
@@ -76,28 +75,25 @@ function Destinationpaket() {
         <Row className='mt-5'>
             <Col md={8}>
             <div className="conten-detail">
-                <Button
-                onClick={()=>setOpen (!open)}
-                aria-controls='example-collapse-text'
-                aria-expanded={open}
-                >Description</Button>
-                <Button
-                onClick={()=>setOpen1 (!open1)}
-                aria-controls='example-collapse-text2'
-                aria-expanded={open}
-                >What’s include</Button>
-                <Collapse in={open}>
-                <div id="example-collapse-text">
+                <Tabs
+                id="controlled-tab-example"
+                activeKey={key}
+                onSelect={
+                    (k) => setKey(k)
+                }
+                >
+                    <Tab eventKey="text1" title="Description">
+                <div id="controlled-tab-example">
                     <p>
                          If you're planning a trip to Bali, you might want to consider a visit to Nusa Penida. This beautiful island is located southeast of Bali and is known for its stunning beaches, crystal clear waters, and picturesque landscapes. In this article, we'll take
                          a closer look at Nusa Penida and provide you with some tips for planning your trip.
                          <br /><br /> The easiest way to get to Nusa Penida is to take a fast boat from Sanur or Padang Bai. The journey takes approximately 45 minutes to 1 hour, depending on the sea conditions. You can also take a ferry from
                         Padang Bai, which is cheaper but takes longer.
-                    </p>
+                    </p> 
                 </div>
-                </Collapse>
-                <Collapse in={open1}>
-                <div id="example-collapse-text2">
+                </Tab>
+                <Tab eventKey="text2" title="What's include">
+                <div id="controlled-tab-example">
                     <div className="acomodation">
                         <span><i><AiOutlineCar/></i>Acomodation</span>
                         <p>
@@ -116,7 +112,8 @@ function Destinationpaket() {
                             <li>Visit Broken Beach</li>
                     </div>
                 </div>
-                </Collapse>
+                </Tab>
+                </Tabs>
             </div>
             </Col>
         </Row>

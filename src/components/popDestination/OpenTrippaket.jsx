@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Col, Collapse, Container,Row} from 'react-bootstrap'
+import { Button, Col,  Container,Row, Tab, Tabs} from 'react-bootstrap'
 import {ImMap2} from 'react-icons/im'
 import {GoLocation} from 'react-icons/go'
 import {AiFillStar,AiOutlineCar} from 'react-icons/ai'
@@ -11,8 +11,7 @@ import komodoImage from '../../assets/img/pulaukomodo.jpg'
 import lombokImage from '../../assets/img/pulaulombok.jpg'
 import baliImage from '../../assets/img/nusa.jpg'
 function Opentrippaket() {
-    const [open,setOpen] = useState (true);
-    const [open1,setOpen1] = useState(true);
+   const [key, setKey] = useState('text1');
     const imgs=[
         {id:0,value:candiImage},
         {id:1,value:bromoImage},
@@ -73,11 +72,10 @@ function Opentrippaket() {
                             <br />
                             <span>Recommend Duration</span>
                             <h4>4 Days 3 Nights</h4>
-                            <br/>
                             <span>Pax available</span>
                             <h4>20 pax lefts</h4>
                     </div>
-                    <Button> Book Now</Button>
+                    <Button>Book Now</Button>
                     <hr/>
                     <p>Specials offer for new traveler 15 % off. Valid until 5 August 2023</p>
                 
@@ -87,18 +85,15 @@ function Opentrippaket() {
         <Row className='mt-5'>
             <Col md={8}>
             <div className="conten-detail">
-                <Button
-                onClick={()=>setOpen (!open)}
-                aria-controls='example-collapse-text'
-                aria-expanded={open}
-                >Description</Button>
-                <Button
-                onClick={()=>setOpen1 (!open1)}
-                aria-controls='example-collapse-text2'
-                aria-expanded={open}
-                >What’s include</Button>
-                <Collapse in={open}>
-                <div id="example-collapse-text">
+                <Tabs
+                id="controlled-tab-example"
+                activeKey={key}
+                onSelect={
+                    (k) => setKey(k)
+                }
+                >
+                <Tab eventKey="text1" title="Description">
+                <div id="controlled-tab-example">
                     <p>
                          If you're planning a trip to Bali, you might want to consider a visit to Nusa Penida. This beautiful island is located southeast of Bali and is known for its stunning beaches, crystal clear waters, and picturesque landscapes. In this article, we'll take
                          a closer look at Nusa Penida and provide you with some tips for planning your trip.
@@ -106,9 +101,9 @@ function Opentrippaket() {
                         Padang Bai, which is cheaper but takes longer.
                     </p>
                 </div>
-                </Collapse>
-                <Collapse in={open1}>
-                <div id="example-collapse-text2">
+                </Tab>
+                <Tab eventKey="text2" title="What's include">
+                <div id="controlled-tab-example">
                     <div className="feauter-trip">
                         <span><i><FaAward/></i>Featured Trip</span>
                         <p>
@@ -139,7 +134,9 @@ function Opentrippaket() {
                             <li>Visit Broken Beach</li>
                     </div>
                 </div>
-                </Collapse>
+                </Tab>
+            
+            </Tabs>
             </div>
             </Col>
         </Row>

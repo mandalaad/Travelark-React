@@ -1,10 +1,10 @@
 import React from 'react'
-import Privatepaket from '../../components/popDestination/Privatepaket'
+import Opentrippaket from '../../components/popDestination/OpenTrippaket'
 import FormContact from '../../components/form/Form'
 function openTrip() {
   return (
     <>
-    <Privatepaket/>
+    <Opentrippaket/>
     <FormContact/>
     </>
   )
